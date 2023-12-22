@@ -1,35 +1,30 @@
-Projet système : RéplicatBio
+System Project: ReplicatBio
 
-Vue d'ensemble
+Overview
 
-Projet RéplicatBio est une initiative pionnière pour automatiser la comparaison de données génomiques issues de séquençages d'ADN. 
-Focalisé sur l'analyse de génomes Herpesvirus3, le projet utilise des scripts sophistiqués en Python et bash pour traiter et analyser des fichiers VCF. 
-Cherche à identifier et comparer des variants génétiques entre différents échantillons et réplicats.
+The ReplicatBio Project is an initiative to automate the comparison of genomic data from DNA sequencing. Focused on the analysis of Herpesvirus3 genomes, the project uses Python and bash scripts to process and analyze VCF files. Its aim is to identify and compare genetic variants among different samples and replicates.
 
 Scripts
 
-1. parcourir.py : 
-Ce script est conçu pour naviguer dans les systèmes de fichiers et organiser les fichiers VCF.
-Il extrait les informations clés, comme les identifiants uniques, pour regrouper et préparer les données pour l'analyse.
-Ce script facilite la gestion des données et assure une organisation efficace avant l'exécution des analyses comparatives.
+parcourir.py:
+This script is designed to navigate file systems and organize VCF files. It extracts key information, such as unique identifiers, to group and prepare data for analysis. This script facilitates data management and ensures efficient organization before performing comparative analyses.
 
-2. compare.py : 
-Ce script analyse les fichiers VCF pour comparer les variants génétiques.
-Il utilise des structures de données complexes, comme des dictionnaires, pour stocker et comparer efficacement les informations séquentielles.
-Son rôle clé est d'identifier les variantes génétiques communes entre différents échantillons, ce qui est essentiel pour comprendre les similitudes et les différences dans les données de séquençage.
+compare.py:
+This script analyzes VCF files to compare genetic variants. It uses complex data structures, such as dictionaries, to store and efficiently compare sequential information. Its key role is to identify common genetic variants among different samples, which is essential for understanding similarities and differences in sequencing data.
 
-3. main_powershell.ps1 : 
-C'est le script principal qui orchestre l'ensemble du flux de travail du projet.
-Il exécute et gère les autres scripts Python, assurant ainsi une exécution fluide et coordonnée du processus d'analyse.
-Ce script joue un rôle crucial dans la gestion des opérations et la vérification des résultats.
+main_powershell.ps1 or main.sh:
+This is the main script that orchestrates the entire project workflow. It executes and manages the other Python scripts, ensuring a smooth and coordinated execution of the analysis process. This script plays a crucial role in managing operations and verifying results.
 
-Objectifs et Fonctionnalités
+Objectives and Features :
+Automate the comparison of VCF files for accurate genomic analysis.
+Identify common genetic variants, providing a clear overview of similarity and variation among replicates.
+Use efficient and accurate data processing methods to ensure data integrity and reliability of results.
 
-Automatiser la comparaison des fichiers VCF pour une analyse génomique précise.
-Identifier les variants génétiques communs, en fournissant un aperçu clair de la similarité et de la variation entre les réplicats.
-Utiliser des méthodes de traitement des données efficaces et précises pour assurer l'intégrité et la fiabilité des résultats.
+Required Configuration :
+Bash environment for executing the scripts.
+Python 3, with the os, re, sys modules for data processing and analysis.
 
-Configuration Requise
+Make sure to place the scripts as well as the data in the same directory.
 
-Environnement bash pour l'exécution des scripts.
-Python 3, avec les modules os, re, sys pour le traitement et l'analyse des données.
+Author: Thomas Vitré
+Last Updated: 12/22/2023
